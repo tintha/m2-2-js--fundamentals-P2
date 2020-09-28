@@ -10,6 +10,8 @@
 // -----------------------------------------------------------------
 function getMax(num1, num2) {
   // code here
+  const greater =  Math.max(num1, num2);
+  return greater;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

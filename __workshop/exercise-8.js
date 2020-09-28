@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
+  const newList = list.map(name => "Hello " + name);
+  return newList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +18,7 @@ function greet(list) {
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
+console.log(greet(["cat", "dog", "penguin", "rabbit", "you"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;

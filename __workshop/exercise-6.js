@@ -9,6 +9,7 @@
 // -----------------------------------------------------------------
 function removeEvens(list) {
   // list is an array of numbers
+  return list.filter(num => num % 2 != 0);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -17,6 +18,7 @@ function removeEvens(list) {
 console.log(removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 // Create more test examples.
+console.log(removeEvens([12, 55, 76, 34, 92, 56, 38876, 334, 63]));
 
 // This is needed for automated testing (more on that later)
 module.exports = removeEvens;

@@ -10,6 +10,8 @@
 // -----------------------------------------------------------------
 function characterCount(string) {
   // complete the function
+  return string.length;
+  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

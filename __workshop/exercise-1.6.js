@@ -11,6 +11,8 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
+  const result = array.filter(word => word != string);
+  return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

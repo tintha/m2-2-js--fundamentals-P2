@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   // list is an array of strings
+  const newList = list.filter(words => words.length > 5);
+  return newList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -18,6 +20,9 @@ console.log(
 );
 
 // Create more test cases.
+console.log(
+  keepLong(["silly", "happy", "intelligent", "stupid", "wise", "funny"])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;

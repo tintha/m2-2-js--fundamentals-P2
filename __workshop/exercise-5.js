@@ -7,6 +7,7 @@
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
   // code here
+  return array.includes(item);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -29,6 +30,19 @@ console.log(itemIsPresent(myArray, "funky")); // true
 console.log(itemIsPresent(myArray, "elephant")); // false
 
 // Create more test cases
+
+const cities = [
+  "Montreal",
+  "Toronto",
+  "Vancouver",
+  "Ottawa",
+  "Quebec",
+  "Winnipeg",
+  "Kingston"
+];
+
+console.log(itemIsPresent(cities, "Ottawa")); // true
+console.log(itemIsPresent(cities, "Bangkok")); // false
 
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;

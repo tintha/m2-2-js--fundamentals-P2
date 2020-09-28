@@ -10,6 +10,9 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  const filteredNames = list.filter(name => name.length >= 4)
+  .map(name => "Hello " + name);
+  return filteredNames;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -17,6 +20,7 @@ function greetLong(list) {
 console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
 
 // Create more test cases.
+console.log(greetLong(["Charmander", "Pikachu", "Eevee", "Mewtwo"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greetLong;
