@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let result = str.split("").filter(letter => letter === char);
+  return result.length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +18,8 @@ function countChar(str, char) {
 console.log(countChar("BananaBabyBubbles", "a"));
 
 // Create more test cases.
+console.log(countChar("Les chemises de l’archiduchesse sont ell’s sèches archi sèches", "c"));
+console.log(countChar("Mississippi", "s"));
 
 // This is needed for automated testing (more on that later)
 module.exports = countChar;

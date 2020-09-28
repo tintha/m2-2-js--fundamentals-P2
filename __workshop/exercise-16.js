@@ -12,6 +12,18 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
+  let resultArray = [];
+
+  for (let num = min; num <= max; num++) {
+    const toArray = num.toString().split('').map(Number);
+    const newNum = toArray.map(a => {return a**3}).reduce((a, b) => a + b);
+    if (newNum === num) {
+      resultArray.push(num);        
+      }
+  }
+  return resultArray;  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -19,6 +31,7 @@ function findNumbers(num1, num2) {
 console.log(findNumbers(0, 1000));
 
 // Create more test cases.
+console.log(findNumbers(100, 800));
 
 // This is needed for automated testing (more on that later)
 module.exports = findNumbers;
