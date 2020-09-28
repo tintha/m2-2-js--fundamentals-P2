@@ -19,6 +19,8 @@ function getMax(num1, num2) {
 console.log(getMax(12, 43));
 
 // Create more test examples.
+console.log(getMax(77, 23));
+console.log(getMax(7898543, 7898544));
 
 // This is needed for automated testing (more on that later)
 module.exports = getMax;

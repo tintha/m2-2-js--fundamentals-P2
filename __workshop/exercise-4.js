@@ -20,6 +20,7 @@ console.log(calculateAverage(3, 1, 1, 1, 1));
 
 // Create more test cases.
 console.log(calculateAverage(3, 6, 8, 200, 9));
+console.log(calculateAverage(46, 42, 75, 85, 65));
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;

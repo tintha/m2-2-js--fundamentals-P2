@@ -23,6 +23,8 @@ function characterCount(string) {
 console.log(characterCount("wubba lubba dub dub"));
 
 // Create more test examples.
+console.log(characterCount("Winter is coming."));
+console.log(characterCount("Lorem ipsum dolor sit       amet"));
 
 // This is needed for automated testing (more on that later)
 module.exports = characterCount;

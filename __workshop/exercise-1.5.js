@@ -42,6 +42,8 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(decodeMessage("This isnt fun??!", ["nt", "??"]));
+console.log(decodeMessage("When you reach the beginningend of your rope, donttie a jhgtwusknot in it and lj;jfgjjhang on.", ["beginning", "dont", "jhgtwus", "lj;jfgjj"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;

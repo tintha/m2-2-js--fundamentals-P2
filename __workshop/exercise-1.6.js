@@ -24,6 +24,8 @@ function removeStringFromArray(array, string) {
 console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
 
 // Create more test examples.
+console.log(removeStringFromArray(["blue", "red", "green", "multicolor"], "multicolor"));
+console.log(removeStringFromArray(["cat", "dog", "duck", "human"], "human"));
 
 // This is needed for automated testing (more on that later)
 module.exports = removeStringFromArray;
